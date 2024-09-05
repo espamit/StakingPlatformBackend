@@ -63,4 +63,4 @@ exports.users = async (req, res) => {
         console.error(error); // Added: log the error for debugging purposes
         return res.status(500).send({ success: false, msg: 'Internal Server Error' });
     }
-};;
+};

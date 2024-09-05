@@ -23,6 +23,10 @@ const stakingSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
     },
+    totalClaimedRewards: {
+        type: Number,
+        default: 0,
+    }
 }, { timestamps: true });
 
 const Staking = mongoose.model('Staking', stakingSchema);
